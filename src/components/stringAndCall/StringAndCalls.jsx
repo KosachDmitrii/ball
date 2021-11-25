@@ -38,7 +38,7 @@ const StringAndCalls = () => {
                 setTodos(JSON.parse(xhr.responseText))
             }
         }
-    },[todos]);
+    },[]);
 
     return <React.Fragment>
         <div className={styles.container}>
