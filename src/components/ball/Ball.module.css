@@ -64,18 +64,17 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
-
+    margin-top: 20px;
 }
 
 .btn_color{
     height: 45px;
     width: 45px;
-    border: none;
+    border: 1px #ffffff solid;
     border-radius: 50%;
     margin-right: 30px;
     cursor: pointer;
-
-    transition: all .2s linear;
+    transition: all .3s linear;
 }
 
 .btn_color:last-child{
@@ -83,7 +82,7 @@
 }
 
 .btn_color:hover{
-
+    transform: translateY(-10px);
 }
 
 .ball{
