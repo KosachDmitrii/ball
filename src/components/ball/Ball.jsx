@@ -16,7 +16,6 @@ const Ball = () => {
         setIsAutoColor(false);
         setIsColor(() => true);
         ball_bg.current.style.backgroundColor = (COLORS.find(color => color.name === name)).color;
-
     }
 
     const handlerChangeAutoColors = () => {
