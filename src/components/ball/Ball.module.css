@@ -91,7 +91,7 @@
     border-radius: 50%;
     border: 2px solid #000;
     overflow: hidden;
-    animation: jump 2s linear infinite;
+    animation: jump 2s linear infinite paused;
     box-shadow: 0 2px 5px rgba(54, 54, 54, 0.71);
 }
 
