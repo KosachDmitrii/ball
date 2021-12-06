@@ -15,7 +15,7 @@ const Ball = () => {
         ball_bg.current.style.animationPlayState = 'paused';
         setIsAutoColor(false);
         setIsColor(() => true);
-        ball_bg.current.style.backgroundColor = (COLORS.find(color => color.name === name)).color;
+        ball_bg.current.style.boxShadow = (COLORS.find(color => color.name === name)).boxShadow;
     }
 
     const handlerChangeAutoColors = () => {
@@ -49,7 +49,7 @@ const Ball = () => {
                 </div>
                 <div className={styles.options_colors}>
                     {COLORS.map(color => {
-                        return <button key={color.name} className={styles.btn_color} style={{backgroundColor: color.color}} type='button' name={color.name} onClick={handlerChangeSetColor}/>
+                        return <button key={color.name} className={styles.btn_color} style={{boxShadow: color.boxShadow}} type='button' name={color.name} onClick={handlerChangeSetColor}/>
                     })}
                 </div>
             </div>

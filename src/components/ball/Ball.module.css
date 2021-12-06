@@ -89,7 +89,6 @@
     height: 10vw;
     width: 10vw;
     border-radius: 50%;
-    border: 2px solid #000;
     overflow: hidden;
     animation: jump 2s linear infinite paused;
     box-shadow: 0 2px 5px rgba(54, 54, 54, 0.71);
@@ -98,6 +97,7 @@
 .ball_bg{
     height: 100%;
     width: 100%;
+    transition: all .2s linear;
 }
 
 @keyframes jump {
@@ -123,16 +123,16 @@
 
 @keyframes color {
     1%{
-        background-color: brown;
+        box-shadow: 30px 30px 50px 10px brown inset;
     }
     33%{
-        background-color: blue;
+        box-shadow: 30px 30px 50px 10px blue inset;
     }
     66%{
-        background-color: yellow;
+        box-shadow: 30px 30px 50px 10px yellow inset;
     }
     100%{
-        background-color: brown;
+        box-shadow: 30px 30px 50px 10px brown inset;
     }
 }
 
